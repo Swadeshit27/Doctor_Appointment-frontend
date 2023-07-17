@@ -6,7 +6,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 const Contact = () => {
   return (
     <>
-          <div className="container-fluid col-10">
+          <div className="container-fluid" style={{ margin: "6rem 0" }}>
               <div className="row my-5">
               <div className="col-12 col-md-6 order-1 order-md-0 ">
                       <h1 className='text-center py-3'>Feel Free To Contact</h1>
@@ -18,7 +18,7 @@ const Contact = () => {
                           <div type="submit" className='contact_btn text-center'>Submit</div>
                       </form>
               </div>
-              <div className="col-12 col-md-6 order-0 order-md-1 py-3 d-md-flex justify-content-center">
+              <div className="col-12 col-md-6 order-0 order-md-1 py-3 d-flex justify-content-center">
                   <img className=' img-fluid' src="images/customer.jpg" width={400} alt="" />
                   </div>
               </div>

@@ -17,7 +17,7 @@ const CaroselReview = () => {
         <>
             <div className="container-fluid col-11 py-3">
                 <h2 className='text-center mx-4'>What our users have to say</h2>
-                    <Carousel autoplay  className='col-10 mx-auto mt-4 ' >
+                    <Carousel   className='col-md-10 mx-auto mt-4 ' >
                         {reviewList.map((val, i) => {
                             return <Review data={val} key={i} />
                         })}

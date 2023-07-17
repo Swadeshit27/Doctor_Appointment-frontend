@@ -14,11 +14,11 @@ const DoctorProfile = () => {
     return (
         <>{
             particularDoc ? <>
-                <h1 className='text-center mt-5'>Doctor's Profile</h1>
-                <div className="container col-10 col-lg-8 p-4  d-flex flex-column" >
+                <h1 className='text-center' style={{ marginTop: "6rem" }}>Doctor's Profile</h1>
+                <div className="container col-sm-10 col-lg-8 p-4  d-flex flex-column min-vh-100 " >
                     <div className="d-md-flex doctor_profile" >
                         <div className="img">
-                            <img src={`https://doctor-appointment-backend-a949.onrender.com/Images/${photo}`} alt="photo" style={{ width: "150px", height: "150px", }} className='mt-4 mx-3' />
+                            <img src={`https://doctor-appointment-backend-a949.onrender.com/Images/${photo}`} alt="photoofdoctor" style={{ width: "150px", height: "150px", }} className='mt-4 mx-3' />
                         </div>
                         <div className="details p-3">
                             <p className='fs-3 text-primary'>{name}</p>

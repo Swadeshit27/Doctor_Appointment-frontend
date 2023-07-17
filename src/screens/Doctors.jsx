@@ -10,7 +10,7 @@ const Doctors = () => {
     return (
         <>
             {doctors.listofDoctors ?
-                <div className="container mt-5">
+                <div className="container  min-vh-100 " style={{ marginTop: "6rem " }}>
                     <h3>{doctors.listofDoctors.length} doctors available in Kolkata</h3>
                     <h5>Book appointments with minimum wait-time & verified doctor details</h5>
                     <hr />
@@ -22,7 +22,7 @@ const Doctors = () => {
                                         <div className="imgage">
                                             <img src={`https://doctor-appointment-backend-a949.onrender.com/Images/${val.photo}`} alt="doctor" style={{ width: "150px", height: "150px", borderRadius: "50%" }} />
                                         </div>
-                                        <div className="details w-50 my-3" >
+                                        <div className="details w-lg-50 my-3" >
                                             <div className='fs-3 text-primay'>{val.name}</div>
                                             <div>{doctors.catagory}</div>
                                             <div className='lfs-5'>{val.exp} years experience overall </div>

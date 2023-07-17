@@ -27,8 +27,8 @@ const ReviewUs = () => {
     }
     return (
         <>
-            <div className="container-fluid col-10">
-                <div className="row my-5">
+            <div className="container-fluid " style={{ margin: "6rem 0" }}>
+                <div className="row col-11 mx-auto">
                     <div className="col-12 col-md-6 order-1 order-md-0 ">
                         <h1 className='text-center py-3'>Please review our website</h1>
                         <form className='contactus'>

@@ -48,23 +48,25 @@ const Login = () => {
       }
     }
   }
-  
+
   return (
     <>
-      <div className="container col-10 col-md-6 col-lg-4 col-xl-4 p-5 userlogin_container" >
-        <div className="chanal">
-          <div className="box" style={count ? active : inactive} onClick={() => setcount(true)}>Log in</div>
-          <div className="box" style={count ? inactive : active} onClick={() => setcount(false)}>Sign up</div>
-        </div>
-        <div className="rest">
-          {count ?
-            <div className='login_container'>
-              <input type="email" name="email" className="text-input" onChange={(e) => setEmail(e.target.value)} value={email} id="email" placeholder='email*' />
-              <input type="password" className="text-input" name="password" onChange={(e) => setPassword(e.target.value)} value={password} id="password" placeholder='password*' />
-              <p className='forget'>Forget password ?</p>
-              <div className='contact_btn' onClick={loginUser}>Log in</div>
-            </div>
-            : <Signup />}
+      <div style={{minHeight:"75vh"}}>
+        <div className="container col-10 col-md-6 col-lg-4 col-xl-3 px-1 px-sm-2 py-5 userlogin_container" >
+          <div className="chanal">
+            <div className="box" style={count ? active : inactive} onClick={() => setcount(true)}>Log in</div>
+            <div className="box" style={count ? inactive : active} onClick={() => setcount(false)}>Sign up</div>
+          </div>
+          <div className="rest">
+            {count ?
+              <div className='login_container'>
+                <input type="email" name="email" className="text-input" onChange={(e) => setEmail(e.target.value)} value={email} id="email" placeholder='email*' />
+                <input type="password" className="text-input" name="password" onChange={(e) => setPassword(e.target.value)} value={password} id="password" placeholder='password*' />
+                <p className='forget'>Forget password ?</p>
+                <div className='contact_btn' onClick={loginUser}>Log in</div>
+              </div>
+              : <Signup />}
+          </div>
         </div>
       </div>
     </>

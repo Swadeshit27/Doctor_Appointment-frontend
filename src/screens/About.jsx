@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const About = () => {
     return (
         <>
-            <div className='container-fluid  my-5'>
+            <div className='container-fluid ' style={{ margin: "6rem 0",minHeight:"75vh" }}>
                 <h1 className='text-center my-3 fw-semibold' >About Us</h1>
                 <div className="container  mb-5">
                     <div className="row">
@@ -14,13 +14,13 @@ const About = () => {
                         <div className="col-12 col-md-6 py-3 order-1">
                             <h1>Swadesh Pal</h1>
                             <p>Full stack MERN Web Developer</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quam voluptatem a sit quia ipsa aliquid id earum quas rem,</p>
+                            <p>I am currently pursuing B. Tech in Information Technology Department at Jalpaiguri Government Engineering College(Autonomous). I'm a  Web Developer and  DSA learner.</p>
                             <p className='fs-5 mt-3'>Connect me on</p>
                             <div className="profile">
-                                <Link to="https://www.facebook.com/Keshab1113?mibextid=ZbWKwL" className="profileIcon"><i className="bi bi-facebook"></i></Link>
-                                <Link to="https://www.instagram.com/keshabdas2003/" className="profileIcon"><i className="bi bi-instagram "></i></Link>
-                                <Link to="https://www.linkedin.com/in/keshab-das-6a84ab234" className="profileIcon"><i className="bi bi-linkedin "></i></Link>
-                                <Link to="https://github.com/Keshab1113" className="profileIcon"><i className="bi bi-github "></i></Link>
+                                <Link to="https://www.facebook.com/profile.php?id=100073559185519" className="profileIcon"><i className="bi bi-facebook"></i></Link>
+                                <Link to="https://www.instagram.com/_swadesh_pal/" className="profileIcon"><i className="bi bi-instagram "></i></Link>
+                                <Link to="https://www.linkedin.com/in/swadesh-pal-204036228/" className="profileIcon"><i className="bi bi-linkedin "></i></Link>
+                                <Link to="https://github.com/Swadeshit27" className="profileIcon"><i className="bi bi-github "></i></Link>
                             </div>
                         </div>
                     </div>

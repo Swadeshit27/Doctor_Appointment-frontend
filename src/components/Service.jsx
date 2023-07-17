@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react'
 import ServiceCard from './ServiceCard';
-import AOS from "aos"
-import "aos/dist/aos.css"
 
 const serviceApi = [
   { imgSrc: "https://img.freepik.com/free-photo/young-female-doctor-white-coat-with-stethoscope-around-her-neck-showing-smartphone-smiling-confident-sitting-table-with-laptop-pink-wall_141793-52557.jpg?size=626&ext=jpg&ga=GA1.2.188362780.1679900037&semt=ais", title: "Easy to Appointment", description: "Confirm appointment" },
@@ -13,21 +11,14 @@ const serviceApi = [
 
 
 const Service = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 200,
-      duration: 600,
-      easing: 'ease-in-sine',
-      delay: 100,
-    });
-  }, [])
+
   return (
     <>
-      <div className='container-fluid col-10'>
-        <h2 className='text-center my-3' data-aos="zoom-in">Why Choose Us</h2>
+      <div className='container-fluid col-11'>
+        <h2 className='text-center my-3'>Why Choose Us</h2>
         <div className='sec_subContainer justify-content-lg-between my-2' >
           {serviceApi.map((val, i) => {
-            return <ServiceCard data={val} key={i} dataaos={"zoom-in"}  />
+            return <ServiceCard data={val} key={i}  />
           })}
         </div>
       </div>

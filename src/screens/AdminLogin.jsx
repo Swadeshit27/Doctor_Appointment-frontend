@@ -39,7 +39,7 @@ const AdminLogIn = () => {
 
     return (
         <>
-            <div className="container col-10 col-md-6 col-lg-4 col-xl-4 p-5 userAdminLogIn_container" >
+            <div className="container col-10 col-md-6 col-lg-4 col-xl-4 p-5 userAdminLogIn_container" style={{ margin: "6rem 0" }}>
                 <div className="chanal">
                     <div className="box"  >Admin Log in</div>
                 </div>

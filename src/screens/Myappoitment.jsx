@@ -21,7 +21,7 @@ const Myappoitment = () => {
 
     return (
         <>
-            <div className="col-10 text-center my-4 mx-auto appoitment_search "  >
+            <div className="col-10 text-center  mx-auto appoitment_search " style={{ marginTop: "6rem" }} >
                 <input type="search" name="" id="" className='w-50' onChange={e => setinputval(e.target.value)} placeholder='Enter your mobile no' />
                 <Button type="primary" className='ms-2' shape="circle" icon={<SearchOutlined />} onClick={searchPatient}></Button>
             </div>

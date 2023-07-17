@@ -11,14 +11,12 @@
   font-family: "Roboto Condensed", sans-serif;
   list-style: none;
   text-decoration: none !important;
-    transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
 }
 *::-webkit-scrollbar {
   display: none;
 }
-p {
-  margin-bottom: 0.5rem !important;
-}
+
 :root {
   --bg-universal: #fff;
   --bg-light-white: #f8f8fb;
@@ -45,6 +43,9 @@ h4,
 h5,
 h6 {
   color: var(--text-col-800) !important;
+}
+p {
+  margin-bottom: 0.5rem !important;
 }
 #main_page {
   position: relative;
@@ -110,6 +111,26 @@ footer a {
 .navcolor {
   background-color: var(--bg-universal);
   box-shadow: 0 0 10px var(--dark-shadow);
+}
+/* ***************************************************** side nav bar ****************************************************** */
+.cancel{
+  position: absolute!important;
+    right: 1rem;
+    top: 1rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* ***************************************************** Home header ********************************************************** */
 .main_header {
@@ -180,7 +201,7 @@ footer a {
   box-shadow: 0 0 4px var(--dark-shadow);
   border-radius: 15px;
 }
-.ser_container:hover{
+.ser_container:hover {
   scale: 1.02;
 }
 .ser_container img {
@@ -219,7 +240,7 @@ footer a {
   border: none;
   width: 80%;
   text-align: center;
-  margin: 2rem auto;
+  margin: 0 auto;
   background: var(--light-blue);
   color: var(--bg-universal);
   cursor: pointer;
@@ -247,6 +268,7 @@ footer a {
   align-items: center;
   border-radius: 20px;
   margin: 2rem auto;
+  margin-top: 6rem;
   box-shadow: 0 0 15px var(--light-blue);
   animation: slideShow 2s ease forwards;
 }
@@ -264,7 +286,7 @@ footer a {
   align-items: center;
   font-size: 1.5rem;
   overflow: hidden;
-  font-weight: 600;
+  /* font-weight: 600; */
   background: var(--bg-universal);
   width: 15rem;
   height: 3rem;
@@ -315,6 +337,7 @@ footer a {
 .forget {
   margin: -10px 20px !important;
   cursor: pointer;
+  padding-bottom: 2rem;
 }
 
 /* ************************************************* user Information ************************************************* */
@@ -329,23 +352,18 @@ footer a {
 }
 
 .user_container .w-100 {
-  height: 20rem;
-  display: flex;
-}
-.user_container img {
-  width: 30%;
+  min-height: 20rem;
 }
 .user_details {
-  width: 70%;
+  min-width: 60%;
+  padding-top: 1rem;
 }
 /* ******************************************* User Review section ******************************************************** */
 .review_card {
-  width: 90%;
   margin: 0px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
 }
 .review_header {
   width: 100%;
@@ -361,6 +379,7 @@ footer a {
 .user_header h5,
 .user_header p {
   margin: 0 0 0 1rem !important;
+  text-transform: capitalize;
 }
 .rating {
   display: flex;
@@ -370,11 +389,11 @@ footer a {
 }
 .review_body {
   margin: 1.8rem auto;
-  height: 10rem;
+  min-height: 10rem;
   width: 100%;
   text-align: center;
-  overflow-y: scroll;
   font-size: 1.2rem;
+  color: var(--text-col-800);
 }
 
 :where(.css-dev-only-do-not-override-12jzuas).ant-carousel
@@ -411,6 +430,11 @@ footer a {
 .download_right {
   animation: side_right 1.2s ease-in;
 }
+/* ******************************************** Doctors profile section****************************************************************************** */
+.details {
+  width: 50%;
+}
+
 /* ******************************************** Doctor profile section****************************************************************************** */
 .doctor_profile {
   box-shadow: 0 0 5px var(--dark-shadow);
@@ -474,14 +498,34 @@ height: 40px;
   justify-content: center;
   align-items: center;
   opacity: 0.5;
-  transition:  all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-.left-right:hover{
+.left-right:hover {
   cursor: pointer;
   box-shadow: 0 0 5px #645f5f;
   opacity: 1;
 }
 /******************************************** animation********************************* */
+
+.pos{
+  position: fixed;
+  left: -100%;
+  top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .details {
+    width: auto;
+    margin: 0 auto;
+  }
+  h5{
+    font-size: 1rem !important;
+  }
+  .appoitment_search input {
+  width: 80% !important;
+}
+}
+
 
 /* @keyframes side_left {
   0% {

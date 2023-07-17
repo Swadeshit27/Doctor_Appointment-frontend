@@ -21,8 +21,8 @@ const Review = ({ data }) => {
                         <Rate disabled defaultValue={rate} />
                     </div>
                 </div>
-                <div className="review_body">
-                    <p>{reviewData}</p>
+                <div className="review_body pb-4 p-md-4">
+                    <p className='lh-sm'>{reviewData}</p>
                 </div>
             </div>
         </>

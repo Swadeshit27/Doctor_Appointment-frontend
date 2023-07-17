@@ -53,7 +53,7 @@ const AdminSignup = () => {
 
     return (
         <>
-            <div className="container my-5">
+            <div className="container " style={{ margin: "6rem 0" }}>
                 <h1 className='text-center'>Enter Doctors Data</h1>
                 <form className="row g-3">
                     <div className="col-12">

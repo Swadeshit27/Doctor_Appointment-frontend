@@ -40,7 +40,8 @@ const Book = () => {
     const timeStyle = {
         height: "3rem",
         borderRadius: " 25px",
-        padding: "1rem"
+        padding: "1rem",
+        marginBottom:" 0.5rem"
     }
 
     return (
